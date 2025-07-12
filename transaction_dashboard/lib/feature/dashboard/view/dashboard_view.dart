@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:transaction_dashboard/feature/dashboard/models/models.dart';
 import 'package:transaction_dashboard/feature/dashboard/providers/providers.dart';
 import 'package:transaction_dashboard/feature/dashboard/widgets/widgets.dart';
+import 'package:transaction_dashboard/feature/payout_form/view/view.dart';
 import 'package:transaction_dashboard/themes/themes.dart';
 
 class DashboardView extends StatefulWidget {
@@ -53,6 +54,19 @@ class _DashboardViewState extends State<DashboardView> {
             ],
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const PayoutFormView(),
+            ),
+          );
+        },
+        icon: const Icon(Icons.payment),
+        label: const Text('Payout'),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Theme.of(context).colorScheme.onPrimary,
       ),
     );
   }

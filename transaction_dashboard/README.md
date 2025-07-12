@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+====================================================================================================
+    - For the MOCK DATA I have created a small server which I have pushed along with the flutter Repo.
+    - Project is made in  3.32.4 • channel stable
+    - For Network dio is used, with Provider as state-management.
+    -     
+
+
+====================================================================================================
